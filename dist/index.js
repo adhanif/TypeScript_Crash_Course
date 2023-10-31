@@ -45,3 +45,12 @@ const add = (x, y) => {
     return x + y;
 };
 console.log(add(2, 4));
+// void function return
+const log = (message) => {
+    console.log(message);
+};
+log('true');
+const newPerson = {
+    id: 1,
+    name: 'John Doe',
+};

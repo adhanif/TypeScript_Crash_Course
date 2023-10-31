@@ -51,3 +51,21 @@ const add = (x: number, y: number): number => {
   return x + y
 }
 console.log(add(2, 4))
+
+// void function return
+const log = (message: string | number): void => {
+  console.log(message)
+}
+log('true')
+
+//interface
+
+interface UserInterface {
+  id: number
+  name: string
+}
+
+const newPerson: UserInterface = {
+  id: 1,
+  name: 'John Doe',
+}
