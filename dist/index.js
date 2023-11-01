@@ -81,3 +81,19 @@ class Employee extends Person {
 }
 const emplo = new Employee(3, 'shawn', 'Developer');
 console.log(emplo.register());
+//Gnormal function
+// const getArray = (items: any[]): any[] => {
+//   return new Array().concat(items)
+// }
+// const numArray = getArray([1, 2, 3])
+// const strArray = getArray(['dani1', 'dani2'])
+// strArray.push('dani3')
+// console.log(numArray, strArray)
+//with Generic
+const getArray = (items) => {
+    return new Array().concat(items);
+};
+const numArray = getArray([1, 2, 3]);
+const strArray = getArray(['dani1', 'dani2']);
+strArray.push('dani3');
+console.log(numArray, strArray);
