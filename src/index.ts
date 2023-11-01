@@ -107,3 +107,15 @@ class Person implements PersonInterface {
 const dani = new Person(1, 'dani')
 console.log(dani)
 console.log(dani.register())
+
+//class inheritane
+class Employee extends Person {
+  position: string
+  constructor(id: number, name: string, position: string) {
+    super(id, name)
+    this.position = position
+  }
+}
+
+const emplo = new Employee(3, 'shawn', 'Developer')
+console.log(emplo.register())
