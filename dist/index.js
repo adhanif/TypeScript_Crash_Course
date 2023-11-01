@@ -60,3 +60,15 @@ const add2 = (x, y) => {
 const sub = (x, y) => {
     return x - y;
 };
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} has been registered!`;
+    }
+}
+const dani = new Person(1, 'dani');
+console.log(dani);
+console.log(dani.register());

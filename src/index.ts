@@ -82,3 +82,28 @@ const add2: MathFunc = (x: number, y: number): number => {
 const sub: MathFunc = (x: number, y: number): number => {
   return x - y
 }
+
+//classes
+
+interface PersonInterface {
+  id: number
+  name: string
+  register(): string
+}
+
+class Person implements PersonInterface {
+  id: number
+  name: string
+  constructor(id: number, name: string) {
+    this.id = id
+    this.name = name
+  }
+
+  register() {
+    return `${this.name} has been registered!`
+  }
+}
+
+const dani = new Person(1, 'dani')
+console.log(dani)
+console.log(dani.register())
