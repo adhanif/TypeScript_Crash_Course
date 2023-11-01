@@ -54,3 +54,9 @@ const newPerson = {
     id: 1,
     name: 'John Doe',
 };
+const add2 = (x, y) => {
+    return x + y;
+};
+const sub = (x, y) => {
+    return x - y;
+};

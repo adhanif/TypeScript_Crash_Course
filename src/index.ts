@@ -69,3 +69,16 @@ const newPerson: UserInterface = {
   id: 1,
   name: 'John Doe',
 }
+
+// interface function
+
+interface MathFunc {
+  (x: number, y: number): number
+}
+
+const add2: MathFunc = (x: number, y: number): number => {
+  return x + y
+}
+const sub: MathFunc = (x: number, y: number): number => {
+  return x - y
+}
